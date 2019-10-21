@@ -53,7 +53,7 @@ class ReportActionDump(ReportAction):
 
          dump += "{0}".format(str(bin(getattr(report, "button_share")))[2:])
          dump += "{0}".format(str(bin(getattr(report, "button_options")))[2:])
-	 dump += "{0}".format(str(bin(getattr(report, "button_ps")))[2:])
+         dump += "{0}".format(str(bin(getattr(report, "button_ps")))[2:])
          dump += "{0}".format(str(bin(getattr(report, "button_trackpad")))[2:])
 
          dump += "{0}".format(str(bin(getattr(report,"left_analog_x")))[2:].zfill(8)[::-1])
