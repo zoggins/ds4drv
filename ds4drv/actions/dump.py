@@ -56,15 +56,16 @@ class ReportActionDump(ReportAction):
          dump += "{0}".format(str(bin(getattr(report, "button_ps")))[2:])
          dump += "{0}".format(str(bin(getattr(report, "button_trackpad")))[2:])
 
+         dump += "{0}".format(str(bin(getattr(report, "trackpad_touch0_active")))[2:])
+         dump += "{0}".format(str(bin(getattr(report, "trackpad_touch1_active")))[2:])
+
          dump += "{0}".format(str(bin(getattr(report,"left_analog_x")))[2:].zfill(8)[::-1])
          dump += "{0}".format(str(bin(getattr(report,"left_analog_y")))[2:].zfill(8)[::-1])
          dump += "{0}".format(str(bin(getattr(report,"right_analog_x")))[2:].zfill(8)[::-1])
          dump += "{0}".format(str(bin(getattr(report,"right_analog_y")))[2:].zfill(8)[::-1])
          dump += "{0}".format(str(bin(getattr(report,"l2_analog")))[2:].zfill(8)[::-1])
          dump += "{0}".format(str(bin(getattr(report,"r2_analog")))[2:].zfill(8)[::-1])
-         
-         dump += "{0}".format(str(bin(getattr(report, "trackpad_touch0_active")))[2:])
-         dump += "{0}".format(str(bin(getattr(report, "trackpad_touch1_active")))[2:])
+
 
          dump += "{0}".format(str(bin(getattr(report,"trackpad_touch0_x")))[2:].zfill(16)[::-1])
          dump += "{0}".format(str(bin(getattr(report,"trackpad_touch0_y")))[2:].zfill(16)[::-1])
